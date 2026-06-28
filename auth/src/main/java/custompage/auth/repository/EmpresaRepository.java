@@ -1,4 +1,9 @@
 package custompage.auth.repository;
 
-public class EmpresaRepository {
+import custompage.auth.model.Empresa;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface EmpresaRepository extends JpaRepository<Empresa, Long> {
 }
