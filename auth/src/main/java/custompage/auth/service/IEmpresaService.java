@@ -1,4 +1,7 @@
 package custompage.auth.service;
+import custompage.auth.dto.EmpresaDTO;
 
-public class IEmpresaService {
+public interface IEmpresaService {
+    EmpresaDTO guardar(EmpresaDTO dto);
+    EmpresaDTO buscarPorId(Long id);
 }
